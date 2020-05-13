@@ -23,6 +23,13 @@ spec:
           value: app1
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            cpu: 10m
+            memory: 20Mi
+          limits:
+            cpu: 20m
+            memory: 40Mi
 ---
 apiVersion: v1
 kind: Service
